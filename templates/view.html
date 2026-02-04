@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Attendance Records</title>
+</head>
+
+<body>
+
+<h2>Stored Attendance</h2>
+
+<table border="1">
+<tr>
+<th>Name</th>
+<th>Roll</th>
+<th>Status</th>
+</tr>
+
+{% for row in data %}
+<tr>
+<td>{{row.Name}}</td>
+<td>{{row.Roll}}</td>
+<td>{{row.Status}}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<br>
+<a href="/">Back</a>
+
+</body>
+</html>
